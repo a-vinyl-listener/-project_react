@@ -1,0 +1,40 @@
+.only {
+  background: url(../../public/05/09.webp) center/cover no-repeat;
+  width: 100%;
+  min-height: 1073px;  
+	display: flex;
+	flex-direction: column;
+
+	&__wrap{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 179px;
+	}
+	&__title {
+		color: rgba(126, 182, 147, 1);
+		font-family: 'Yellowtail', Arial, sans-serif;
+		font-size: 36px;
+		font-weight: 400;
+	}
+	&__subtitle {
+		color: rgba(39, 76, 91, 1);
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: clamp(32px, 4.5vw, 50px);
+		font-weight: 250;
+		margin-top: 7px;
+		text-align: center;
+	}
+	&__text {
+		color: rgba(39, 76, 91, 1);
+		font-family: 'Open Sans', Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		text-align: center;
+		margin-top: 24px;
+	}
+	&__image {
+		margin-top: 50px;
+	}
+
+}

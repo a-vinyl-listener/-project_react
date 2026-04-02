@@ -1,0 +1,156 @@
+.news {
+  display: flex;
+  align-items: center;
+  min-height: 1177px;
+  padding: 100px 0;
+  &__wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    color: rgba(126, 182, 147, 1);
+    font-family: "Yellowtail", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  &__subtitle {
+    color: rgba(39, 76, 91, 1);
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: clamp(32px, 4.5vw, 50px);
+    font-weight: 250;
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__box {
+position: relative;
+    width: 100%;
+    margin-top: 45px;
+    width: 100%;
+    max-width: 677px;
+    &::after {
+      content: " ";
+      display: block;
+      height: 92px;
+
+    }
+  }
+  &__img{
+    height: auto;
+  }
+  &__image {
+    width: 100%;
+    border-radius: 30px;
+  }
+  &__wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    bottom: -3%;
+    left: 32px;
+    right: 32px;
+    max-width: 613px;
+    min-height: clamp(230px, 16vw, 306px);
+    padding: 20px 57px;
+    border-radius: 31px 34px 30px 30px;
+    box-shadow: 0px 20px 35px 0px rgba(167, 167, 167, 0.25);
+    background: rgba(255, 255, 255, 1);
+  }
+  &__holder {
+    position: absolute;
+    top: 43px;
+    left: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(39, 76, 91, 1);
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 250;
+    width: clamp(60px, 7vw, 82px);
+    height: clamp(60px, 7vw, 82px);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+  }
+  &__icon {
+    display: flex;
+    gap: 8px;
+  }
+  &__card {
+    color: rgba(39, 76, 91, 1);
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  &__slogan {
+    color: rgba(39, 76, 91, 1);
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: clamp(18px, 3.26vw, 25px);
+    font-weight: 250;
+  }
+  &__text {
+    color: rgba(82, 92, 96, 1);
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: clamp(14px, 2.36vw, 18px);
+    font-weight: 400;
+    margin-top: 2px;
+  }
+}
+
+.button {
+  &__wrap {
+    width: 100%;
+    max-width: 220px;
+    &_whit {
+      width: 100%;
+      max-width: 220px;
+      height: 80px;
+      background: rgba(255, 255, 255, 1);
+      border: 2px solid rgba(39, 76, 91, 1);
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .news {
+    align-items: stretch;
+    &__flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    &__wrap {
+      flex-wrap: wrap;
+    }
+  }
+  @media (max-width: 768px) {
+    .news {
+      &__wrapper {
+        padding: 15px 20px;
+      }
+      &__wrapper-bottom {
+        bottom: -7.5%;
+      }
+    }
+  }
+}

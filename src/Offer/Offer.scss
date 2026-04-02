@@ -1,0 +1,31 @@
+.offer {
+  background: rgba(39, 76, 91, 1);
+  padding: 100px 0;
+  min-height: 1050px;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+  }
+
+  // 	&__inner {
+  // }
+  &__title {
+    color: rgba(126, 182, 147, 1);
+    font-family: 'Yellowtail', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  &__subtitle {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: clamp(32px, 4.5vw, 50px);
+    font-weight: 800;
+  }
+}

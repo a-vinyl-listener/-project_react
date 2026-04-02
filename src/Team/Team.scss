@@ -1,0 +1,91 @@
+.team {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 1220px;
+	padding: 190px 0;
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title {
+		color: rgba(126, 182, 147, 1);
+		font-family: 'Yellowtail', Arial, sans-serif;
+		font-size: 36px;
+		font-weight: 400;
+	}
+	&__subtitle {
+		color: rgba(39, 76, 91, 1);
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: clamp(32px, 4.5vw, 50px);
+		font-weight: 250;
+	}
+	&__text {
+		color: rgba(82, 92, 96, 1);
+		font-family: 'Open Sans', Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		margin-top: 16px;
+		text-align: center;
+	}
+	&__wrap {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 25px;
+		margin-top: 42px;
+	}
+	&__flashcards {
+		border-radius: 30px;
+		width: 100%;
+		max-width: 449px;
+		&:hover {
+			transform: scale(1.02);
+			transition: transform 0.3s ease;
+			box-shadow: 0px 29px 44px 0px rgba(150, 150, 150, 0.25);
+			background: rgba(255, 255, 255, 1);
+		}
+	
+	}
+		&__image{
+			width: 100%;
+		}
+		&__img{
+			width: 100%;
+			max-width: 449px;
+		}
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+		border-bottom-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		padding: 35px 28px 34px 28px;
+		background: rgba(249, 248, 248, 1);
+	}
+	&__initials {
+		color: rgba(39, 76, 91, 1);
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 25px;
+		font-weight: 250;
+		line-height: 100%;
+	}
+	&__footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__position {
+		color: rgba(126, 182, 147, 1);
+		font-family: 'Yellowtail', Arial, sans-serif;
+		font-size: 22px;
+		font-weight: 400;
+	}
+	&__icon {
+		display: flex;
+		gap: 17px;
+	}
+}

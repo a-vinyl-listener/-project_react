@@ -1,0 +1,60 @@
+.form {
+  margin-top: 80px;
+  &__wrap {
+    display: flex;
+		width: 85%;
+  }
+}
+.some-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 50px;
+  column-gap: 47px;
+  width: 100%;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 569px;
+}
+.input-wrapper label {
+  color: rgba(39, 76, 91, 1);
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 250;
+}
+.input {
+  height: 80px;
+  border: 1px solid rgba(126, 182, 147, 1);
+  border-radius: 16px;
+  margin-top: 26px;
+  padding-left: 23px;
+}
+
+.textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1184px;
+}
+
+.textarea {
+  height: 247px;
+  border: 1px solid rgba(126, 182, 147, 1);
+  border-radius: 16px;
+  margin-top: 26px;
+  padding: 28px 0 0 23px;
+}
+
+.textarea-wrapper label {
+  color: rgba(39, 76, 91, 1);
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 250;
+}
+
+@media (max-width: 1024px) {
+}

@@ -1,0 +1,99 @@
+.black-raspberry {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: -132px;  
+  &__wrap {
+    display: flex;
+    height: auto;
+    min-height: 385px;
+    width: 100%;
+    max-width: 1400px;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 891px;
+    padding: 20px 83px;
+    box-shadow: 0px 14px 36px 0px rgba(204, 204, 204, 0.25);
+    background: rgb(255, 255, 255);
+    border-radius: 30px 0px 0px 30px;
+  }
+  &__title {
+    color: rgba(39, 76, 91, 1);
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: clamp(32px, 3.1vw, 70px);
+    font-weight: 250;
+  }
+  &__subtitle {
+    color: rgba(82, 92, 96, 1);
+    font-family: "Open SansArial", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  &__box {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 13px;
+    width: 100%;
+    max-width: 509px;
+    padding: 20px 25px;
+    border-radius: 0px 30px 30px 0px;
+    background: rgba(250, 250, 250, 1);
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 16px;
+  }
+  &__list-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 17px;
+  }
+  &__item-title > pre {
+    color: rgba(39, 76, 91, 1);
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  &__item {
+    color: rgba(82, 92, 96, 1);
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 1024px) {
+  .black-raspberry {
+    &__inner {
+      padding: 20px 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .black-raspberry {
+    &__wrap {
+      flex-direction: column;
+    }
+    &__inner {
+      align-items: center;
+      padding: 20px 30px;
+      border-radius: 30px 30px 0px 0px;
+    }
+    &__box {
+      max-width: none;
+      border-radius: 0px 0px 30px 30px;
+    }
+  }
+}

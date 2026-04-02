@@ -1,0 +1,64 @@
+.eco {
+  display: flex;
+  align-items: center;
+  min-height: 931px;
+  background: url(../../public/01/25.webp) left  no-repeat;
+  &__flex{
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 78px 72px 77px 89px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 1);
+    max-width: 789px;
+    width: 100%;
+    border: solid 1px black;
+  }
+
+  &__title{
+    color: rgba(126, 182, 147, 1);
+    font-family: 'Yellowtail', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  &__tsubtitle{
+    color: rgba(39, 76, 91, 1);
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: clamp(32px, 4.5vw, 50px);
+    font-weight: 250;
+    line-height: 100%;
+    margin-top: 8px;
+  }
+  &__col{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 35px;
+  }
+
+  &__heading{
+    color: rgba(39, 76, 91, 1);
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 100%;
+  }
+  &__text{
+    color: rgba(82, 92, 96, 1);
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+
+@media(max-width: 768px) {
+  .eco {
+    &__wrap {
+      padding: 45px 35px;
+    }
+  }
+}

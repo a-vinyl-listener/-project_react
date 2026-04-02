@@ -1,0 +1,59 @@
+.things {
+	background: url(../../public/02/02.webp) center / cover no-repeat; 
+	// background-position: -8% 0;
+	// background-size: contain;
+	height: 1000px;
+	&__box {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 209px;
+	}
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin-top: 170px;
+	}
+	&__title {
+		color: rgba(126, 182, 147, 1);
+		font-family: 'Yellowtail', Arial, sans-serif;
+		font-size: 36px;
+		font-weight: 400;
+	}
+	&__subtitle {
+		color: rgba(39, 76, 91, 1);
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: clamp(32px, 4.5vw, 50px);
+		font-weight: 250;
+		margin-top: 8px;
+	}
+	&__text {
+		color: rgba(82, 92, 96, 1);
+		font-family: 'Open Sans', Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		margin-top: 14px;
+	}
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 65px;
+	}
+	&__inner {
+		display: flex;
+		gap: 15px;
+		margin: 49px 0 58px 0;
+	}
+	&__image {
+		width: 46px;
+		height: 46px;
+	}
+	// &__img {}
+	&__slogan {
+		color: rgba(39, 76, 91, 1);
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 25px;
+		font-weight: 500;
+	}
+}

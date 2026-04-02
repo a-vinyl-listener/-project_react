@@ -1,0 +1,20 @@
+.shop{
+  background: url(../../public/03/01.webp) center/cover no-repeat;
+	width: 100%;
+	min-height: 450px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+		&__title {
+		color: rgba(39, 76, 91, 1);
+		font-family: Roboto;
+		font-size: 70px;
+		font-weight: 250;
+		}
+}
+.product-card {
+	&__padding {
+		padding: 90px 0 140px 0;
+		margin: 0;
+	}
+}

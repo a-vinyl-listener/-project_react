@@ -1,0 +1,46 @@
+.farmy {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 285px;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &__title {
+    color: rgba(39, 76, 91, 1);
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 250;
+  }
+  &__subtitle {
+    color: rgba(82, 92, 96, 1);
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  &__image {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 40px;
+  }
+  &__img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 936px;
+    border-radius: 20px;
+  }
+  &__description {
+    color: rgba(82, 92, 96, 1);
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px 0;
+  }
+}

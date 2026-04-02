@@ -1,0 +1,40 @@
+.box {
+	min-height: 957px;
+	display: flex;
+	padding: 100px 0;
+	background: rgba(241, 248, 244, 1);
+	&__flex {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 42px;
+	}
+	&__img {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	&__image{
+		width: 100%;
+		max-width: 612px;
+		height: 100%;
+		max-height: 583px;
+		
+	}
+	&__btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 34px 75px;
+		border-radius: 20px;
+		background: rgba(255, 255, 255, 1);
+	}
+	&__linc {
+		color: rgba(39, 76, 91, 1);
+		font-family: 'Roboto';
+		font-size: clamp(18px, 2.1vw, 25px);
+		font-weight: 500;
+	}
+}

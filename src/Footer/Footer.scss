@@ -1,0 +1,262 @@
+.subscription {
+	padding: 185px 0 117px 0;
+	&__wrap {
+		background:url(../../public/01/32.webp) center/cover no-repeat;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 100%;
+		padding: 105px 35px;
+		justify-content: space-between;
+		border-radius: 30px;
+	}
+	&__title {
+		color: rgba(255, 255, 255, 1);
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: clamp(32px, 4.5vw, 50px);
+		font-weight: 250;
+	}
+	&__inner{
+		display: flex;
+		gap: 6px;
+	}
+	&__search {
+		width: 100%;
+		max-width: 349px;
+	}
+	&__input {
+		width: 100%;
+		// max-width: 349px;
+		height: 80px;
+		border-radius: 16px;
+		background: rgba(255, 255, 255, 1);
+		color: rgba(171, 171, 171, 1);
+		font-family: 'Roboto', Arial, sans-serif;
+		font-style: italic;
+		font-size: 18px;
+		font-weight: 400;
+		text-align: left;
+		padding: 28px 23px 31px 23px;
+	}
+}
+
+.button {
+	&__wrap {
+		&_blue {
+			margin-top: 0px;
+				height: 80px;
+		}
+	}
+}
+
+
+.footer {
+	&__wrap {
+		display: flex;
+		align-items: flex-start;
+		// justify-content: space-evenly;
+		justify-content: center;
+		
+	}
+	&__box-contact {
+		display: flex;
+		flex-direction: column;
+		padding: 0 51px;
+	}
+	&__subject {
+		color: rgba(39, 76, 91, 1);
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 100%;
+		text-align: right;
+	}
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-top: 32px;
+	}
+	&__email {
+		color: rgba(82, 92, 96, 1);
+		font-family: 'Open Sans', Arial, sans-serif;
+		font-size: 25px;
+		font-weight: 400;
+	}
+	&__phone {
+		color: rgba(82, 92, 96, 1);
+		font-family: 'Open Sans', Arial, sans-serif;
+		font-size: 25px;
+		font-weight: 400;
+	}
+	&__address {
+			color: rgba(82, 92, 96, 1);
+		font-family: 'Open Sans', Arial, sans-serif;
+		font-size: 25px;
+		font-weight: 400;
+	}
+	
+	&__information {
+		color: rgba(82, 92, 96, 1);
+		font-family: 'Open Sans', Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+	}
+	&__box-organic {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 41.5px;
+	}
+	&__inner-logo{
+		display: flex;
+		align-items: center;
+	}
+	&__image {
+		display: flex;
+	}
+	// &__img {
+	// }
+	&__headline{
+		color: rgba(39, 76, 91, 1);
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 38px;
+		font-weight: 700;
+		line-height: 100%;
+
+	}
+	&__text {
+		color: rgba(82, 92, 96, 1);
+		font-family: 'Open Sans', Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 25px;	
+		text-align: center;
+		margin-top: 23px;
+	}
+	&__network {
+		display: flex;
+		gap: 15px;
+		margin-top: 49px;
+	}
+	&__link{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 60px;
+		height: 60px;
+		background: rgba(239, 246, 241, 1);
+		border-radius: 50%;
+	}
+	&__link > img{
+		width: 19.28px;
+		height: 18.57px;
+	}
+	&__box-pages {
+		color: rgba(39, 76, 91, 1);
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		padding: 0 51px;
+	}
+	&__caption{
+		color: rgba(39, 76, 91, 1);
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+	}
+	&__items{
+			text-align: center;
+	}
+	&__col{
+		color: rgba(82, 92, 96, 1);
+		font-family: 'Open Sans', Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		margin-top: 24px;
+	}
+
+
+.line {
+		// &__box {
+		// }
+		&__box-vertically {
+			width: 0;
+			height: 336px;
+			transform: rotate(0deg);
+			margin: 0;
+		}
+}
+}
+
+.copyright {
+  height: 48px;
+  margin-top: 120px;
+  //  &__footer {
+  //  }
+   &__inner {
+   display: flex;
+   justify-content: center;
+   padding: 17px 0 ;
+   }
+
+.line {
+			&__box-copyright {
+			display: block;
+			width: 100%;
+			max-width: 1920px;
+			margin: 0;
+			}
+}
+
+}
+
+@media (max-width: 1366px) {
+	.info{
+		padding-top: 100px;
+	}
+	.subscription {
+	&__wrap {
+		align-items: center;
+		flex-direction: column;
+		gap: 20px;
+		}
+	}
+}	
+
+
+@media (max-width: 1024px) {
+
+	.footer{
+		&__wrap{
+		align-items: center;
+    flex-direction: column;
+		gap: 30px;
+		}
+		&__subject{
+			text-align: center;
+		}
+		&__inner {
+    align-items: center;
+	}
+	
+}
+	.footer .line__box-vertically{
+		width: 100%;
+		max-width: 336px;
+		height: 0;
+		margin: 0;
+		transform: rotate(360deg);
+	}
+}
+
+@media (max-width: 768px) {
+		.subscription {
+	&__inner {
+		flex-direction: column;
+    align-items: center;
+		}
+	}
+}
+
+

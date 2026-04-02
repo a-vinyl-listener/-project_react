@@ -1,0 +1,57 @@
+.proposal {
+  display: flex;
+  align-items: center;
+  min-height: 892px;
+  background: rgba(39, 76, 91, 1);
+  padding: 188px 0;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;                                     
+  }
+  &__title {
+    color: rgba(126, 182, 147, 1);
+    font-family: 'Yellowtail', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  &__subtitle {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 250;
+    text-align: center;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 21px;
+    margin-top: 33px;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  &__image {
+    width: 100%;
+    max-width: 334px;
+    border-radius: 30px;
+    background: rgba(240, 240, 240, 1);
+  }
+  &__img{
+    width: 334px;
+    height: 314px;
+    border-radius: 30px;  
+    background: rgba(240, 240, 240, 1);
+  }
+  &__text {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+		}
+}

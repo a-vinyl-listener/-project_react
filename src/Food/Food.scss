@@ -1,0 +1,74 @@
+.food {
+  background: url(../../public/01/04.webp) center/cover no-repeat;
+  width: 100%;
+  min-height: 898px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__body{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+&__title {
+  color: rgba(104, 164, 127, 1);
+  font-family: 'Yellowtail';
+  font-size: clamp(25px, 3vw, 36px);
+  font-weight: 400;
+  line-height: 100%;
+}
+&__subtitle {
+  color: rgba(39, 76, 91, 1);
+  font-family: 'Roboto';
+  font-size: clamp(35px, 3vw, 70px);
+  font-weight: 250;
+  line-height: 100%;
+  margin-top: 8px;
+}
+}
+.button{
+	&__wrap{
+		display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+		width: 220px;
+    height: 79px;
+		border-radius: 16px;
+		background: rgba(239, 211, 114, 1);
+
+	}
+  &__btn {
+    color: rgba(39, 76, 91, 1);
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 16px;
+  }
+  &__arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+		background: rgba(51, 91, 107, 1);
+  }
+}
+
+/* @media(max-width: 1366px){
+
+}*/
+/* @media(max-width: 1024px){
+
+}*/
+/* @media(max-width: 768px){
+
+}*/
+/* @media(max-width: 425px){
+
+}*/
+/* @media(max-width: 360px){
+
+}*/
