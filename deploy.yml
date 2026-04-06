@@ -1,0 +1,65 @@
+# Простой workflow для развертывания статического контента в GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Запуск workflow при пуше в основную ветку (обычно 'main')
+  push:
+    branches: ["main"]
+  # Возможность запустить workflow вручную с вкладки Actions
+  workflow_dispatch:
+
+# Устанавливает права для GITHUB_TOKEN, чтобы разрешить деплой на GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Разрешает только один одновременный деплой
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # Одна задача на деплой
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      # Шаг 1: Клонируем репозиторий
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      # Шаг 2: Настраиваем окружение для вашего проекта (например, Node.js)
+      # Замените 'node-version' на нужную вам версию (можно подсмотреть командой `node --version` локально)[reference:6]
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      # Шаг 3: Устанавливаем зависимости
+      - name: Install dependencies
+        run: npm ci # 'npm install' или 'yarn install', в зависимости от вашего менеджера пакетов
+      
+      # Шаг 4: Собираем проект
+      # Эта команда должна создавать финальные файлы сайта (обычно в папке 'build' или 'dist')
+      - name: Build project
+        run: npm run build
+      
+      # Шаг 5: Настраиваем Pages для загрузки артефактов
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      # Шаг 6: Загружаем собранные файлы как артефакт
+      # ВАЖНО: укажите правильную директорию, куда ваша сборка кладет файлы!
+      # Обычно это 'build' (Create React App, Vite) или 'dist' (Vue CLI).
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist' # ⚠️ ИЗМЕНИТЕ НА ПУТЬ К ВАШЕЙ ПАПКЕ СО СБОРКОЙ
+      
+      # Шаг 7: Деплоим артефакт на GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
